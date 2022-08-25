@@ -1,6 +1,6 @@
 #Formulas: Distance, Quadratic, and Slope
 
-#Distance formula Calculation
+#Distance Formula Calculation
 
 import math
 
