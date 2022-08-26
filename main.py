@@ -68,8 +68,10 @@ import math
 while True:
   fpair = input("Enter the first pair of x & y coordinates (include a space): ")
   spair = input("Enter the second pair of x & y coordinates (include a space): ")
-  fpair = [int(x) for x in fpair.split(" ")]
-  spair = [int(x) for x in spair.split(" ")]
+  fpair = tuple(map(lambda x: int(x), fpair.split(" ")))
+  spair = tuple(map(lambda x: int(x), spair.split(" ")))
+  # fpair = [int(x) for x in fpair.split(" ")]
+  # spair = [int(x) for x in spair.split(" ")]
   
   if (len(fpair) > 2) or (len(spair) > 2):
     print("Please enter eaxctly 2 pairs of x and y coordinates, with 2 values each.")
